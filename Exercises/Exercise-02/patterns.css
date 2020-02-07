@@ -1,0 +1,38 @@
+#round {
+    display:inline-block;
+    width: 0px;
+    height: 0px;
+    border-bottom: 60px solid transparent;
+    border-top: 60px solid #736357;
+    border-left: 60px solid #736357;
+    border-right: 60px solid #736357;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+#round:before {
+    content:"";
+    z-index: 1;
+    display:inline-block;
+    width: 5px;
+    height: 76px;
+    background-color: white;
+    position: relative;
+    transform: rotate(-45deg);
+    top: -2em;
+    left: 1.4em;
+    }
+#round:after {
+    content:"";
+    z-index: 1;
+    display:inline-block;
+    width: 5px;
+    height: 76px;
+    background-color: white;
+    position: relative;
+    transform: rotate(45deg);
+    top: -6.7em;
+    left: -1.8em
+   }
