@@ -126,6 +126,18 @@
     transform: translate(70px,-230px);
 }
 
+.roundline{
+    width: 10px;
+    height: 80Px;
+    transform: rotate(45deg);
+    background-color: #ffcccc;
+}
+
+.roundline:before{
+    width:14.1px;
+    height:14.1px;
+    transform: translate()
+}
 .triangle{
     display:flex;
     width: 800px;
