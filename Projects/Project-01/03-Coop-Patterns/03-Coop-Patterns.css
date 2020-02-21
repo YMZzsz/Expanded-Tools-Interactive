@@ -62,6 +62,13 @@ a:hover{
     margin: 50px;
     box-shadow: 8px 8px #669999;
 }
+.dots:hover{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #99cccc;
+    margin: 50px;
+}
 
 
 .wrap{
