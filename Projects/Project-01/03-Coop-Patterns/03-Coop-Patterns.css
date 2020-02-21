@@ -44,3 +44,128 @@ a:hover{
 .inclinebox{
     
 }
+
+.backgroundbox{
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:560px;
+    height:560px;
+    background-color: #99cccc;
+    border-radius: 40px;
+}
+.dots{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #ffffcc;
+    margin: 50px;
+    box-shadow: 8px 8px #669999;
+}
+
+
+.wrap{
+     display: flex;
+     flex-direction: row;
+}
+
+.item1{
+    height: 500px;
+    width: 500px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: #76C323;
+}
+
+.item2{
+    height: 400px;
+    width: 400px;
+    border-bottom-right-radius: 100%;
+    background-color: #d12d5c;
+    position:relative;
+    top:-400px;
+    left:-250px;
+}
+
+.item3{
+    height: 300px;
+    width: 300px;
+    border-bottom-right-radius: 100%;
+    background-color: #5bdca4;
+    position:relative;
+    top: 0px;   
+    left:-100px;   
+}
+
+.item4{
+    height: 200px;
+    width: 200px;
+    border-bottom-right-radius: 100%;
+    background-color: #cdad32;
+    position:relative;
+    top: 0px;   
+    left:-200px;
+
+}
+.item5{
+    height: 100px;
+    width: 100px;
+    border-bottom-right-radius: 100%;
+    background-color: #cfd333;
+    position:relative;
+    top: 0px;   
+    right:300px;
+    
+}
+
+.item2re{
+    height: 400px;
+    width: 400px;
+    margin-left: 100px;
+    border-bottom-left-radius: 100%;
+    background-color: #d12d5c;
+    position:relative;
+    top:0px;
+   }
+
+.item3re{
+    height: 300px;
+    width: 300px;
+    border-bottom-left-radius: 100%;
+    background-color: #5bdca4;
+    position:relative;
+    top: 0px;   
+    right:-200px;   
+}
+
+.item4re{
+    height: 200px;
+    width: 200px;
+    border-bottom-left-radius: 100%;
+    background-color: #cdad32;
+    position:relative;
+    top: 0px;   
+    left:300px;
+}
+
+.item5re{
+    height: 100px;
+    width: 100px;
+    border-bottom-left-radius: 100%;
+    background-color: #cfd333;
+    position:relative;
+    top: 0px;   
+    left:400px;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 150px 0 150px;
+    border-color: #cfd333 transparent transparent transparent;
+    position:relative;
+    top: 0px;   
+    left:100px;
+}
+
