@@ -61,10 +61,6 @@
     margin:50px;
 }
 
-limit:hover{
-    transform:rotate(180deg);
-    margin: 100px;
-}
 
 .inlinebox{
     display:inline-flex;
@@ -156,8 +152,8 @@ limit:hover{
     transform: rotate(-45deg);
     background-color: #ffcccc;
     position: relative;
-    bottom: 102px;
-    right: -223px;
+    bottom: 103px;
+    right: -367px;
 }
 
 .square{
