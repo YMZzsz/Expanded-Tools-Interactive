@@ -291,7 +291,8 @@
     height:300px;
     border-bottom-right-radius: 100%;
     background-color: #ffcccc;
-/*    transform: translate(100px,100px);*/
+    transform: translate(-40px,-30px);
+    
     }
 .roundnround1:before{
     display: block;
@@ -336,7 +337,7 @@
     
 }
 .triangle{
-    display:flex;
+    display:inline-flex;
     width: 800px;
     flex-wrap: wrap;
 }
@@ -348,6 +349,11 @@
     border-width: 0 0 200px 200px;
     border-color: transparent transparent #ff9933 transparent;
     margin:10px;
+    animation-name: flap;
+    animation-duration: 0.1s;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;
+    
 }
 
 .triangle1:after{
@@ -359,6 +365,22 @@
     border-width: 0 0 200px 200px;
     border-color: transparent transparent white transparent;
     transform: translate(-150px,-20px);
+}
+
+.triangle1:active,
+.triangle1:focus,
+.triangle1:hover {
+   
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+}
+
+@keyframes flap{
+    from {transform: rotateY(0rad);}
+    to {transform: rotateY(3.142rad);}
 }
 
 #space{
