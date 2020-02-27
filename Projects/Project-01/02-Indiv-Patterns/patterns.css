@@ -98,45 +98,85 @@
     justify-content: center;
 }
 
+.background2{
+    display:block;
+    width:-webkit-fill-available;
+    height:20000px;
+    background-image: linear-gradient(#cc4f27,#6699cc,#ff9966);
+}
+
 .blockcontainer{
-    display:flex;
-    width: 300px;
+    display:inline-flex;
     flex-wrap: wrap;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    justify-content: center;
+    position:fixed;
+    transform: translate(-10%,30%);
 }
 
 .block1 {
-    display:inline-block;
+    display:block;
     width: 60px;
     height: 200px;
     background-color: #ff9966;
     border-radius: 10px;
     box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;
+    animation-name: lightchange1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes lightchange1 {
+    0%  {background-color: #ff9966; box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;}
+    33%  {background-color: #6699cc; box-shadow: 70px 0 #cc4f27, 140px 0 #ff9966;}
+    66%  {background-color: #cc4f27; box-shadow: 70px 0 #ff9966, 140px 0 #6699cc;}
+    100%  {background-color: #ff9966; box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;}
+}
+
 .block1:before {
     content:"";
     z-index:1;
-    display:inline-block;
+    display:block;
     width: 60px;
     height: 200px;
     background-color: #ff9966;
     border-radius: 10px;
     box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;
     transform: scale(0.8) rotate(90deg) translate(-65px, -400px);
+    animation-name: lightchange2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     }
 
+@keyframes lightchange2 {
+    0%  {background-color: #ff9966; box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;}
+    33%  {background-color: #6699cc; box-shadow: 70px 0 #cc4f27, 140px 0 #ff9966;}
+    66%  {background-color: #cc4f27; box-shadow: 70px 0 #ff9966, 140px 0 #6699cc;}
+    100%  {background-color: #ff9966; box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;}
+}
 
-.block1:after{
+.block1:after {
     content:"";
     z-index:2;
-    display:inline-block;
+    display:block;
     width: 60px;
     height: 200px;
     background-color: #ff9966;
     border-radius: 10px;
     box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;
     transform: rotate(180deg) translate(-390px, -50px);
+    animation-name: lightchange3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+    
+@keyframes lightchange3 {
+    0%  {background-color: #ff9966; box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;}
+    33%  {background-color: #6699cc; box-shadow: 70px 0 #cc4f27, 140px 0 #ff9966;}
+    66%  {background-color: #cc4f27; box-shadow: 70px 0 #ff9966, 140px 0 #6699cc;}
+    100%  {background-color: #ff9966; box-shadow: 70px 0 #6699cc, 140px 0 #cc4f27;}
 }
-
 .block2{
     width: 100px;
     height: 100px;
@@ -145,6 +185,15 @@
     border: 30px solid #6699cc;
     transform: translate(-30px, 270px);
     box-shadow: 0px 0px 0px 30px #ff9966;
+    animation-name: lightchange4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    }
+
+@keyframes lightchange4 {
+    0% { border: 30px solid #6699cc; box-shadow: 0px 0px 0px 30px #ff9966;}
+    50% { border: 30px solid #ff9966; box-shadow: 0px 0px 0px 30px #6699cc;}
+    100% { border: 30px solid #6699cc; box-shadow: 0px 0px 0px 30px #ff9966;}
 }
 
 .block2index{
