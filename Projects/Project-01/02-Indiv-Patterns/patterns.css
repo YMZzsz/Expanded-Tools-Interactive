@@ -18,8 +18,19 @@
     border-bottom-right-radius: 60px;
 }
 
+@keyframes turnaround{
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+
 .round:hover{
-    transform: rotate(180deg);
+/*    transform: rotate(180deg);*/
+    
+ animation-name: turnaround;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
 }
 
 .round:before {
