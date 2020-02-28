@@ -87,7 +87,7 @@
     display:flex;
     height:auto;
     width:auto;
-    align-content: center;
+   justify-content: center;
     margin:150px;
 
 }
@@ -518,80 +518,113 @@ a:hover{
 
 .wrap{
      display: flex;
+    
      flex-direction: row;
 }
 
+
+/*index content dont change*/
 .item1index{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     background-color: #76C323;
 }
 .item2index{
     display: block;
-    height: 50px;
-    width:50px;
+    height: 100px;
+    width:100px;
     border-bottom-right-radius: 100%;
     background-color: #d12d5c;
     position:relative;
-    box-shadow: 20px 20px 0px 20px #5bdca4;
+    box-shadow: 40px 40px 0px 40px #5bdca4;
     
 }
+/*index content dont change*/
 
 .item1{
-    height: 500px;
-    width: 500px;
+    height: 100vmin;
+    width: 100vmin;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     background-color: #76C323;
 }
 
 .item2{
-    height: 400px;
-    width: 400px;
+    height: 80vmin;
+    width: 80vmin;
     border-bottom-right-radius: 100%;
     background-color: #d12d5c;
     position:relative;
-    top:-400px;
-    left:-250px;
+    top:-80vmin;
+    left:-50vmin;
+    animation: redcircle 4s infinite;
+}
+
+@keyframes redcircle{
+    0%{transform: scaleY(1);transform-origin: top}
+    50%{transform: scaleY(1.05);transform-origin: top}
+    75%{transform: scaleY(0.95);transform-origin: top}
+    100%{transform: scaleY(1);transform-origin: top}
 }
 
 .item3{
-    height: 300px;
-    width: 300px;
+    height: 60vmin;
+    width: 60vmin;
     border-bottom-right-radius: 100%;
     background-color: #5bdca4;
     position:relative;
     top: 0px;   
-    left:-100px;   
+    left:-20vmin;   
+    animation: bluecircle 4s infinite;
 }
 
+@keyframes bluecircle{
+    0%{transform: scaleY(1);transform-origin: top}
+    30%{transform: scaleY(1.05);transform-origin: top}
+    75%{transform: scaleY(0.95);transform-origin: top}
+    100%{transform: scaleY(1);transform-origin: top}
+}
 .item4{
-    height: 200px;
-    width: 200px;
+    height: 40vmin;
+    width: 40vmin;
     border-bottom-right-radius: 100%;
     background-color: #cdad32;
     position:relative;
     top: 0px;   
-    left:-200px;
+    left:-40vmin;
+    animation: yellowcircle 4s infinite;
+}
 
+@keyframes yellowcircle{
+    0%{transform: scaleY(1);transform-origin: top}
+    40%{transform: scaleY(1.05);transform-origin: top}
+    60%{transform: scaleY(0.95);transform-origin: top}
+    100%{transform: scaleY(1);transform-origin: top}
 }
 .item5{
-    height: 100px;
-    width: 100px;
+    height: 20vmin;
+    width: 20vmin;
     border-bottom-right-radius: 100%;
     background-color: #cfd333;
     position:relative;
     top: 0px;   
-    right:300px;
-    
+    right:60vmin;
+    animation: yellowcircle1 4s infinite;
+}
+
+@keyframes yellowcircle1{
+    0%{transform: scaleY(1);transform-origin: top}
+    25%{transform: scaleY(0.9);transform-origin: top}
+    75%{transform: scaleY(1.2);transform-origin: top}
+    100%{transform: scaleY(1);transform-origin: top}
 }
 
 .item2re{
-    height: 400px;
-    width: 400px;
-    margin-left: 100px;
+    height: 80vmin;
+    width: 80vmin;
+    margin-left: 20vmin;
     border-bottom-left-radius: 100%;
     background-color: #d12d5c;
     position:relative;
@@ -599,43 +632,43 @@ a:hover{
    }
 
 .item3re{
-    height: 300px;
-    width: 300px;
+    height: 60vmin;
+    width: 60vmin;
     border-bottom-left-radius: 100%;
     background-color: #5bdca4;
     position:relative;
     top: 0px;   
-    right:-200px;   
+    right:-40vmin;   
 }
 
 .item4re{
-    height: 200px;
-    width: 200px;
+    height: 40vmin;
+    width: 40vmin;
     border-bottom-left-radius: 100%;
     background-color: #cdad32;
     position:relative;
     top: 0px;   
-    left:300px;
+    left:60vmin;
 }
 
 .item5re{
-    height: 100px;
-    width: 100px;
+    height: 20vmin;
+    width: 20vmin;
     border-bottom-left-radius: 100%;
     background-color: #cfd333;
     position:relative;
     top: 0px;   
-    left:400px;
+    left:80vmin;
 }
 
-.triangle{
+.trianglecoop{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 400px 150px 0 150px;
+    border-width: 80vmin 30vmin 0 30vmin;
     border-color: #cfd333 transparent transparent transparent;
     position:relative;
     top: 0px;   
-    left:100px;
+    left:20vmin;
 }
 
