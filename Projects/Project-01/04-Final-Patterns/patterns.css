@@ -464,10 +464,11 @@ a:hover{
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-    width:560px;
-    height:560px;
+    width:-webkit-fill-available;
+    height:-webkit-fill-available;
     background-color: #99cccc;
     border-radius: 40px;
+    justify-content: center;
 }
 
 .dots{
@@ -477,7 +478,33 @@ a:hover{
     background-color: #ffffcc;
     margin: 50px;
     box-shadow: 8px 8px #669999;
+        animation-name: disappear;
+    animation-duration: 0.1s;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;
+    
 }
+
+
+.dots:active,
+.dots:focus,
+.dots:hover {
+   
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+}
+
+@keyframes disappear{
+    from {background-color: #99cccc; box-shadow: 0px 0px 0px 8px #669999;}
+    to {background-color: transparent; box-shadow: 0px 0px 0;}
+}
+
+    
+
+/*
 .dots:hover{
     width:40px;
     height:40px;
@@ -486,6 +513,7 @@ a:hover{
     margin: 50px;
      box-shadow: 0px 0px 0;
 }
+*/
 
 
 .wrap{
