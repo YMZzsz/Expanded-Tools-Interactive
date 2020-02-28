@@ -45,15 +45,36 @@ a:hover{
     
 }
 
+.backgroundindexbox{
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100px;
+    height:100px;
+    background-color: #99cccc;
+    border-radius: 10px;
+}
+
+.dotsindex{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #ffffcc;
+    margin: auto;
+    box-shadow: 4px 4px #669999;
+}
+
 .backgroundbox{
     display:inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: auto;
     width:560px;
     height:560px;
     background-color: #99cccc;
     border-radius: 40px;
 }
+
 .dots{
     width:40px;
     height:40px;
@@ -75,6 +96,24 @@ a:hover{
 .wrap{
      display: flex;
      flex-direction: row;
+}
+
+.item1index{
+    height: 100px;
+    width: 100px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: #76C323;
+}
+.item2index{
+    display: block;
+    height: 50px;
+    width:50px;
+    border-bottom-right-radius: 100%;
+    background-color: #d12d5c;
+    position:relative;
+    box-shadow: 20px 20px 0px 20px #5bdca4;
+    
 }
 
 .item1{
