@@ -1,0 +1,223 @@
+@import url();
+
+.container{
+    display: inline-flex;
+    width: auto;
+    height: auto;
+}
+
+.Aout{display: block;
+    height: 55px;
+    width: 55px;
+    background-color: transparent;
+    margin: 20px;}
+
+.Bout{display: block;
+    height: 55px;
+    width: 55px;
+    background-color: transparent;
+    margin: 20px;}
+
+.Cout{display: block;
+    height: 55px;
+    width: 55px;
+    background-color: transparent;
+    margin: 20px;}
+
+
+
+.A{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.A1{
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: white;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.A2{
+    display: block;
+    width: 5px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    top: 30px;
+    left: 22.5px;
+}
+
+.B{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.B1{
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: white;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.B2{
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: white;
+    position: relative;
+    top: 25px;
+    left: 15px;
+}
+
+.B3{
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 5px solid white;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: relative;
+    top: 10px;
+    left: 45px;
+}
+
+.C{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.C1{
+    display: block;
+    height: 20px;
+    width: 5px;
+    background-color: white;
+    position: relative;
+    top: 15px;
+    left: 45px;
+}
+
+.C2{
+    display: block;
+    height: 0px;
+    width: 0px;
+    position: relative;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+    top: -21px;
+    left: -3.6px;
+    transform: rotate(-45deg);
+}
+
+.C3{
+    display: block;
+    height: 0px;
+    width: 0px;
+    position: relative;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    top: 21px;
+    left: -3.6px;
+    transform: rotate(45deg);
+}
+
+
+
+@media only screen and (min-width : 400px) and (max-width : 800px){
+        
+    .A{
+        background-color:darkblue;
+    }
+    
+    .B{
+        background-color:darkblue;
+    }
+    
+    .C{
+        background-color:darkblue;
+    }
+    
+     .Aout{
+        background-color:darkolivegreen;
+         width: 60px;
+         height:60px;
+    }
+    .Bout{
+        background-color:darkolivegreen;
+        width: 60px;
+        height:60px;
+    }
+    .Cout{
+        background-color:darkolivegreen;
+        width: 60px;
+        height:60px;
+    }
+    .A1{
+        background-color:darkolivegreen;
+    }
+    
+    .A2{
+        background-color:darkolivegreen;
+    }
+    
+    .B1{
+        background-color:darkolivegreen;
+    }
+    .B2{
+        background-color:darkolivegreen;
+    }
+    .B3{
+        border-right:5px solid darkolivegreen;
+    }
+    .C1{
+        background-color:darkolivegreen;
+    }
+    .C2{
+        border-bottom:5px solid darkolivegreen;
+    }
+    .C3{
+        border-top:5px solid darkolivegreen;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .container{
+        flex-direction: column;
+    }
+    
+    .A{
+        background-color:crimson;
+    }
+    
+    .B{
+        background-color: crimson;
+    }
+    
+    .C{
+        background-color:crimson;
+    }
+    
+    .Aout{
+        background-color:coral;
+    }
+    .Bout{
+        background-color:coral;
+    }
+    .Cout{
+        background-color:coral;
+    }
+}
