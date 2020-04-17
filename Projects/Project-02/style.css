@@ -1,0 +1,51 @@
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+#1{}
+
+#A{
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    top: -100vh;
+    margin: auto
+}
+
+#A1{
+    display: block;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+#A2{
+    display: block;
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    top: 300px;
+    left: 225px;
+}
+
+#shadow{
+    display: block;
+    background-color: darkgray;
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    position: relative;
+    top:80vh;
+    margin-left: auto;
+    margin-right: auto;
+}
