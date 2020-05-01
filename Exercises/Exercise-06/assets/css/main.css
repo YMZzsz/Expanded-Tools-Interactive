@@ -1,0 +1,251 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #DADADA;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+	border: solid black 5px;
+}
+
+.oval{
+    width: 550px;
+    height: 110px;
+    background-color: cadetblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    left: 190px;
+}
+
+.green1{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #91ab54;
+    border-radius: 100%;
+    position: absolute;
+    top: 210px;
+    left: 309px;
+}
+
+.green2{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #91ab54;
+    border-radius: 100%;
+    position: absolute;
+    top: 180px;
+    left: 472px;
+}
+
+.green3{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #91ab54;
+    border-radius: 100%;
+    position: absolute;
+    top: 228px;
+    left: 522px;
+}
+
+.apple1{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 30% 35% 50% 50%;
+    background-color: darkred;
+    position: absolute;
+    top: 250px;
+    left: 480px;
+}
+
+.stick4{
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    background-color: saddlebrown;
+    position: absolute;
+    top:-18px;
+    left: 54px;
+}
+
+.pear11{
+    display:inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #b36938;
+    position: absolute;
+    top: 210px;
+    left: 240px;
+}
+
+.pear12{
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #b36938;
+    position: absolute;
+    top: -50px;
+    left: 40px;
+}
+
+.pear13{
+    display: inline-block;
+    width: 20px;
+    height: 80px;
+    background-color: #b36938;
+    transform: rotate(26deg);
+    position: absolute;
+    top:-29px;
+    left: 27px;
+}
+
+.pear14{
+    display: inline-block;
+    width: 20px;
+    height: 80px;
+    background-color: #b36938;
+    transform: rotate(-26deg);
+    position: absolute;
+    top:-29px;
+    left: 112px;
+}
+
+.pear21{
+    display:inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #cfb855;
+    position: absolute;
+    top: 240px;
+    left: 360px;
+}
+
+.pear22{
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #cfb855;
+    position: absolute;
+    top: -50px;
+    left: 40px;
+}
+
+.pear23{
+    display: inline-block;
+    width: 20px;
+    height: 80px;
+    background-color: #cfb855;
+    transform: rotate(26deg);
+    position: absolute;
+    top:-29px;
+    left: 29px;
+}
+
+.pear24{
+    display: inline-block;
+    width: 20px;
+    height: 80px;
+    background-color: #cfb855;
+    transform: rotate(-26deg);
+    position: absolute;
+    top:-29px;
+    left: 115px;
+}
+
+
+.pear31{
+    display:inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #71873d;
+    position: absolute;
+    top: 240px;
+    left: 570px;
+}
+
+.pear32{
+    display:inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #71873d;
+    position: absolute;
+    top: -35px;
+    left: 40px;
+}
+
+.pear33{
+    display: inline-block;
+    width: 20px;
+    height: 60px;
+    background-color: #71873d;
+    transform: rotate(28deg);
+    position: absolute;
+    top:-20px;
+    left: 29px;
+}
+
+.pear34{
+    display: inline-block;
+    width: 20px;
+    height: 60px;
+    background-color: #71873d;
+    transform: rotate(-23deg);
+    position: absolute;
+    top:-20px;
+    left: 89px;
+}
+
+.stick1{
+    width: 10px;
+    height: 50px;
+    background-color: saddlebrown;
+    position: absolute;
+    top:-95px;
+    left: 75px;
+}
+
+.stick2{
+    width: 10px;
+    height: 50px;
+    background-color: saddlebrown;
+    position: absolute;
+    top:-95px;
+    left: 75px;
+}
+
+.stick3{
+    width: 10px;
+    height: 30px;
+    background-color: saddlebrown;
+    position: absolute;
+    top:-62px;
+    left: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+

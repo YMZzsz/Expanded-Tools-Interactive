@@ -3,71 +3,163 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=0.6">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     </head>
 
 
-    <body>
+    <body style="background-color: #3c3c4a;">
                  
+        <audio id="ka">
+        <source src="assets/ka.wav" type="audio/wav">
+        </audio>
+        <audio id="take">
+        <source src="assets/take.wav" type="audio/wav">
+        </audio>
+        <audio id="display">
+        <source src="assets/display.wav" type="audio/wav">
+        </audio>
+        <audio id="resetaudio">
+        <source src="assets/reset.wav" type="audio/wav">
+        </audio>
             
         <div id="container">
-                <button id=1> Drop the Word </button>
-                <div id="shadow"></div>
-                <div id="A"><div id="A1"></div><div id="A2"></div></div>
-                       
-                
-            <div id="container2">
-                <div class="B"><div class="B1"></div><div class="B2"></div><div class="B3"></div></div>
 
-                <div class="C"><div class="C1"></div><div class="C2"></div><div class="C3"></div></div>
-            
-                <div class="D"><div class="D1"></div><div class="D2"></div><div class="D3"></div></div>
+
+            <div class="frontbody">
+                       
+                <div class="bodyreflection">
+                        <div class="upperpanel">
+                <div id="slot"><div id="slotround"><div id="slotbottom"></div></div></div>
+                            <div class="slottext"><p>INSERT HERE</p></div>
+                    <div id="screenshadow">
+                            <div id="screen"></div>
+                        <div id="reset">
+                        <div class="resettext">
+                            <p>RESET</p></div>
+                        </div>
+                    </div>
+                            <div class="lowerpanel">
+                            <div class="frame">
+                                <div class="cover"></div>
+                                </div>
+                            </div>
+                        </div>
+            <div id="container2">
+                    
+                    
+<!--                    <div id="blank-clear"></div>-->
                 
-                <div class="E"><div class="E1"></div><div class="E2"></div></div>
+                <div class="keycontainer">
                 
-                <div class="F"><div class="F1"></div><div class="F2"></div></div>
-                
-                <div class="G"><div class="G1"></div><div class="G2"></div><div class="G3"></div><div class="G4"></div></div>
-                
-                <div class="H"><div class="H1"></div><div class="H2"></div></div>
-                
-                <div class="I"><div class="I1"></div><div class="I2"></div></div>
-                
-                <div class="J"><div class="J1"></div><div class="J2"></div><div class="J3"></div></div>
-                
-                <div class="K"><div class="K1"></div><div class="K2"></div><div class="K3"></div></div>
-                
-                <div class="L"><div class="L1"></div></div>
-                
-                <div class="M"><div class="M1"></div><div class="M2"></div><div class="M3"></div></div>
-                
-                <div class="N"><div class="N1"></div><div class="N2"></div></div>
-                
-                <div class="O"><div class="O1"></div><div class="O2"></div><div class="O3"></div><div class="O4"></div><div class="O5"></div></div>
-                
-                <div class="P"><div class="P1"></div><div class="P2"></div><div class="P3"></div></div>
-                
-                <div class="Q"><div class="Q1"></div><div class="Q2"></div><div class="Q3"></div><div class="Q4"></div><div class="Q5"></div></div>
-                
-                <div class="R"><div class="R1"></div><div class="R2"></div><div class="R3"></div><div class="R4"></div></div>
-                
-                <div class="S"><div class="S1"></div><div class="S2"></div><div class="S3"></div><div class="S4"></div></div>
-                
-                <div class="T"><div class="T1"></div><div class="T2"></div></div>
-                
-                <div class="U"><div class="U1"></div><div class="U2"></div><div class="U3"></div></div>
-                
-                <div class="V"><div class="V1"></div></div>
-                
-                <div class="W"><div class="W1"></div><div class="W2"></div><div class="W3"></div></div>
-                
-                <div class="X"><div class="X1"></div><div class="X2"></div><div class="X3"></div><div class="X4"></div></div>
-                
-                <div class="Y"><div class="Y1"></div><div class="Y2"></div><div class="Y3"></div></div>
-                
-                <div class="Z"><div class="Z1"></div><div class="Z2"></div></div>
-                
-                
+
+                    <div id="keyside1"><div class="keyframe"><div class="face">
+                        <div class="A"><div class="A1"></div><div class="A2"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+                        
+                     <div id="keyside2"><div class="keyframe"><div class="face">
+                        <div class="B"><div class="B1"></div><div class="B2"></div><div class="B3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+                    
+                    <div id="keyside3"><div class="keyframe"><div class="face">
+                        <div class="C"><div class="C1"></div><div class="C2"></div><div class="C3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+                    
+                    <div id="keyside4"><div class="keyframe"><div class="face">
+                        <div class="D"><div class="D1"></div><div class="D2"></div><div class="D3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+                    
+                    <div id="keyside5"><div class="keyframe"><div class="face">
+                        <div class="E"><div class="E1"></div><div class="E2"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside6"><div class="keyframe"><div class="face">
+                        <div class="F"><div class="F1"></div><div class="F2"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside7"><div class="keyframe"><div class="face">
+                        <div class="G"><div class="G1"></div><div class="G2"></div><div class="G3"></div><div class="G4"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside8"><div class="keyframe"><div class="face">
+                        <div class="H"><div class="H1"></div><div class="H2"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside9"><div class="keyframe"><div class="face">
+                        <div class="I"><div class="I1"></div><div class="I2"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside10"><div class="keyframe"><div class="face">
+                        <div class="J"><div class="J1"></div><div class="J2"></div><div class="J3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside11"><div class="keyframe"><div class="face">
+                        <div class="K"><div class="K1"></div><div class="K2"></div><div class="K3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside12"><div class="keyframe"><div class="face">
+                        <div class="L"><div class="L1"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside13"><div class="keyframe"><div class="face">
+                        <div class="M"><div class="M1"></div><div class="M2"></div><div class="M3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside14"><div class="keyframe"><div class="face">
+                        <div class="N"><div class="N1"></div><div class="N2"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside15"><div class="keyframe"><div class="face">
+                        <div class="O"><div class="O1"></div><div class="O2"></div><div class="O3"></div><div class="O4"></div><div class="O5"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside16"><div class="keyframe"><div class="face">
+                        <div class="P"><div class="P1"></div><div class="P2"></div><div class="P3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside17"><div class="keyframe"><div class="face">
+                        <div class="Q"><div class="Q1"></div><div class="Q2"></div><div class="Q3"></div><div class="Q4"></div><div class="Q5"></div></div>
+                            </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside18"><div class="keyframe"><div class="face">
+                        <div class="R"><div class="R1"></div><div class="R2"></div><div class="R3"></div><div class="R4"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside19"><div class="keyframe"><div class="face">
+                        <div class="S"><div class="S1"></div><div class="S2"></div><div class="S3"></div><div class="S4"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside20"><div class="keyframe"><div class="face">
+                        <div class="T"><div class="T1"></div><div class="T2"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside21"><div class="keyframe"><div class="face">
+                        <div class="U"><div class="U1"></div><div class="U2"></div><div class="U3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside22"><div class="keyframe"><div class="face">
+                        <div class="V"><div class="V1"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside23"><div class="keyframe"><div class="face">
+                        <div class="W"><div class="W1"></div><div class="W2"></div><div class="W3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside24"><div class="keyframe"><div class="face">
+                        <div class="X"><div class="X1"></div><div class="X2"></div><div class="X3"></div><div class="X4"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside25"><div class="keyframe"><div class="face">
+                        <div class="Y"><div class="Y1"></div><div class="Y2"></div><div class="Y3"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                    <div id="keyside26"><div class="keyframe"><div class="face">
+                        <div class="Z"><div class="Z1"></div><div class="Z2"></div></div>
+                        </div></div><div class="keyfront"></div></div>
+
+                </div>
                 
                 
                 
@@ -76,24 +168,330 @@
                 
                 
  </div>
-                
+            </div>  
             </div>
-            
+        </div>
 
          
 
         
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
     
         <script>
-        
-            $(document).ready(function(){
-            $("button#1").click(function(){
-            $("#A").animate({top:"200px",height:"500px",width:"500px"},2500);
-            $("#shadow").animate({width:"520px",height:"200px"},2500);
+        $(document).ready(function(){
+            $('#keyside1').draggable({revert: "valid"});
+            $('#keyside2').draggable({revert: "valid"});
+            $('#keyside3').draggable({revert: "valid"});
+            $('#keyside4').draggable({revert: "valid"});
+            $('#keyside5').draggable({revert: "valid"});
+            $('#keyside6').draggable({revert: "valid"});
+            $('#keyside7').draggable({revert: "valid"});
+            $('#keyside8').draggable({revert: "valid"});
+            $('#keyside9').draggable({revert: "valid"});
+            $('#keyside10').draggable({revert: "valid"});
+            $('#keyside11').draggable({revert: "valid"});
+            $('#keyside12').draggable({revert: "valid"});
+            $('#keyside13').draggable({revert: "valid"});
+            $('#keyside14').draggable({revert: "valid"});
+            $('#keyside15').draggable({revert: "valid"});
+            $('#keyside16').draggable({revert: "valid"});
+            $('#keyside17').draggable({revert: "valid"});
+            $('#keyside18').draggable({revert: "valid"});
+            $('#keyside19').draggable({revert: "valid"});
+            $('#keyside20').draggable({revert: "valid"});
+            $('#keyside21').draggable({revert: "valid"});
+            $('#keyside22').draggable({revert: "valid"});
+            $('#keyside23').draggable({revert: "valid"});
+            $('#keyside24').draggable({revert: "valid"});
+            $('#keyside25').draggable({revert: "valid"});
+            $('#keyside26').draggable({revert: "valid"});
+           
+            $('#slot').droppable({
+					drop: function(event, ui){
+						var id = ui.draggable.attr("id");
+                        
+                    if (id === 'keyside1') {
+							$(this)
+							$('<img src="images/a.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside2') {
+							$(this)
+							$('<img src="images/b.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside3') {
+							$(this)
+							$('<img src="images/c.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside4') {
+							$(this)
+							$('<img src="images/d.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside5') {
+							$(this)
+							$('<img src="images/e.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside6') {
+							$(this)
+							$('<img src="images/f.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside7') {
+							$(this)
+							$('<img src="images/g.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside8') {
+							$(this)
+							$('<img src="images/h.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside9') {
+							$(this)
+							$('<img src="images/i.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside10') {
+							$(this)
+							$('<img src="images/j.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside11') {
+							$(this)
+							$('<img src="images/k.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside12') {
+							$(this)
+							$('<img src="images/l.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside13') {
+							$(this)
+							$('<img src="images/m.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside14') {
+							$(this)
+							$('<img src="images/n.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside15') {
+							$(this)
+							$('<img src="images/o.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside16') {
+							$(this)
+							$('<img src="images/p.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside17') {
+							$(this)
+							$('<img src="images/q.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside18') {
+							$(this)
+							$('<img src="images/r.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside19') {
+							$(this)
+							$('<img src="images/s.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside20') {
+							$(this)
+							$('<img src="images/t.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside21') {
+							$(this)
+							$('<img src="images/u.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside22') {
+							$(this)
+							$('<img src="images/v.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside23') {
+							$(this)
+							$('<img src="images/w.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside24') {
+							$(this)
+							$('<img src="images/x.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside25') {
+							$(this)
+							$('<img src="images/y.png">').appendTo('div#screen');
+						}
+                    if (id === 'keyside26') {
+							$(this)
+							$('<img src="images/z.png">').appendTo('div#screen');
+						}
+                    }
             });
-            });
-        
+            
+            
+            var typeaudio = $("#ka") [0];
+        $("#keyside1").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside2").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside3").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside4").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside5").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside6").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside7").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside8").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside9").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside10").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+       $("#keyside11").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside12").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside13").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside14").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside15").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside16").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside17").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside18").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside19").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside20").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+            $("#keyside21").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside22").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside23").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside24").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside25").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+        $("#keyside26").mouseenter(function(){typeaudio.play()});
+            var typeaudio = $("#ka") [0];
+            
+            
+            
+             var takeaudio = $("#take") [0];
+        $("#keyside1").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside2").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside3").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside4").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside5").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside6").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside7").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside8").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside9").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside10").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+       $("#keyside11").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside12").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside13").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside14").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside15").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside16").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside17").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside18").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside19").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside20").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside21").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside22").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside23").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside24").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside25").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+        $("#keyside26").mousedown(function(){takeaudio.play()});
+            var takeaudio = $("#take") [0];
+      
+            
+        var displayaudio = $("#display") [0];
+        $("#keyside1").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside2").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside3").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside4").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside5").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside6").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside7").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside8").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside9").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside10").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside11").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside12").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside13").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside14").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside15").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside16").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside17").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside18").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside19").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside20").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside21").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside22").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside23").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside24").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside25").mouseup(function(){displayaudio.play()});
+            var displayaudio = $("#display") [0];
+        $("#keyside26").mouseup(function(){displayaudio.play()});
+           
+            var resetaudio = $("#resetaudio") [0];
+            $("#reset").click(function(){resetaudio.play();
+                                        $('div#screen').empty();});
+            
+            
+            
+        });
+            
+            
+            
         </script>
         
     </body>
